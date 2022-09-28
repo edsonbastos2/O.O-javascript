@@ -1,8 +1,7 @@
-class NegociacoesView {
+class NegociacoesView extends View {
 
     constructor(elmento) {
-
-        this._elmento = elmento
+        super(elmento)
     }
 
     _template(model) {
@@ -38,9 +37,5 @@ class NegociacoesView {
             </tfoot>
         </table>
         `
-    }
-
-    update(model) {
-        this._elmento.innerHTML = this._template(model)
     }
 }
